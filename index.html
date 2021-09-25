@@ -2,6 +2,8 @@
 
 <html>
   <head>
+    <title>Fake Business</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="./styles.css" rel="stylesheet">
   </head>
@@ -10,64 +12,78 @@
     <header>
       <h1>Fake Business Inc.</h1>
       <ul>
-        <li>Who We Are</li>
-        <li>Our Products</li>
-        <li>Meet The Team</li>
+        <li><a href="#who">Who We Are</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#team">Meet The Team</a></li>
       </ul>
     </header>
-    <section class="who">
-      <h2>Who We Are</h2>
-      <h3>We do not exist...x And if we did, we'd never make any money. We are but a figment of a web developer's imagination - a web developer with little to no understanding of business.</h3>
+    <section class="mission">
+      <h2 id="who">Who We Are</h2>
+      <h3 class="who">We do not exist. We are but a figment of a web developer's imagination - a web developer with little to no understanding of business.</h3>
     </section>
+    <h2 class="product-title" id="products">Our Products</h2>
     <section class="products">
-      <h2>Our Products</h2>
       <div class="product">
-        <img src="images/rocket.jpeg">
+        <div class="img-cont">
+          <img src="images/rocket.jpeg">
+        </div>
         <h3>Space Rockets</h3>
       </div>
       <div class="product">
-        <img src="images/kittens.webp">
+        <div class="img-cont">
+          <img src="images/kittens.webp">
+        </div>
         <h3>Kittens</h3>
       </div>
       <div class="product">
-        <img src="images/time.jpeg">
+        <div class="img-cont">
+          <img src="images/time.jpeg">
+        </div>
         <h3>Time Machines</h3>
       </div>
       <div class="product">
-        <img src="images/mug.jpeg">
+        <div class="img-cont">
+          <img src="images/mug.jpeg">
+        </div>
         <h3>Novelty Mugs</h3>
       </div>
       <div class="product">
-        <img src="images/christmas.jpeg">
+        <div class="img-cont">
+          <img src="images/christmas.jpeg">
+        </div>
         <h3>Christmas Jumpers</h3>
       </div>
       <div class="product">
-        <img src="images/phone.jpeg">
+        <div class="img-cont">
+          <img src="images/phone.jpeg">
+        </div>
         <h3>Interdimensional Communication Systems</h3>
       </div>
     </section>
     <section class="team">
-      <h2>Meet Our Team</h2>
-      <div class="person">
-        <img src="images/person.jpeg">
-        <h3>Person name</h3>
-      </div>
-      <div class="person">
-        <img src="images/person.jpeg">
-        <h3>Person name</h3>
-      </div>
-      <div class="person">
-        <img src="images/person.jpeg">
-        <h3>Person name</h3>
-      </div>
-      <div class="person">
-        <img src="images/person.jpeg">
-        <h3>Person name</h3>
-      </div>
-      <div class="person">
-        <img src="images/person.jpeg">
-        <h3>Person name</h3>
-      </div>
+      <h2 id="team">Meet Our Team</h2>
+      <div class="team-box">
+        <div class="person">
+          <h3>Homer Simpson</h3>
+          <h4>C.E.O.</h4>
+          <img class="homer" src="images/person.jpeg">
+        </div>
+        <div class="person">
+          <h3>Sarah Connor</h3>
+          <h4>Sales</h4>
+          <img src="images/sarah.jpeg">
+        </div>
+        <div class="person">
+          <h3>Darth Vader</h3>
+          <h4>HR</h4>
+          <img src="images/darth.jpeg">
+        </div>
+        <div class="person">
+          <h3>Hermione Granger</h3>
+          <h4>Wizard</h4>
+          <img class="herm" src="images/wizard.jpeg">
+        </div>
+    </div>
     </section>
   </body>
 </html>
