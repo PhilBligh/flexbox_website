@@ -4,6 +4,10 @@ body {
     font-family: "montserrat";
 }
 
+h1 {
+    font-size: 40px;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -44,15 +48,11 @@ a:link, a:visited {
 }
 
 .products {
-    /* background-image: url("images/city.jpeg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 1% 15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-top: 1px solid white;
-    /* border-bottom: 1px solid white; */
 }
 
 .product {
@@ -97,6 +97,12 @@ img {
     padding-bottom: 200px;
 }
 
+.subteam {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
 .person img {
     max-width: 300px;
 }
@@ -105,3 +111,77 @@ img {
  object-fit: none;
  object-position: 40% 50%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .team-box {
+        flex-direction: column;
+    }
+    .team h3, .team h4 {
+        background-color: silver;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: black;
+        font-size: 1.5rem;
+    }
+    .subteam {
+        width: 100%;
+    }
+
+    .teamA {
+        margin-bottom: 200px;
+    }
+  } 
+
+  @media only screen and (max-width: 630px) {
+    .subteam {
+        flex-direction: column;
+      }
+    
+    .teamA {
+        margin-bottom: 0px;
+    }
+    .person img {
+        margin-bottom: 60px;
+        min-height: 350px;
+    }
+
+    #team {
+        margin-bottom: 50px;
+    }
+
+    .team-box {
+        padding-bottom: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 775px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 970px) {
+      .products {
+          flex-direction: column;
+          margin: 0 auto;
+          padding: 0;
+      }
+      
+      h1 {
+        font-size: 30px;
+      }
+      .product {
+          margin: 0 auto;
+          width: 100%;
+      }
+
+      .img-cont {
+          width: 500px;
+          height: 500px;
+          margin: 0 auto;
+      }
+  } 
